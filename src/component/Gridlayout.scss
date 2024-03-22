@@ -1,0 +1,36 @@
+@import '../asset/icons/styles/variable.scss';
+
+.container{
+    background-color: $primary;
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [center-start] 8rem [center-end full-start] 1fr  [col-start]repeat(8 , minmax(min-content ,14rem))[col-end] 1fr [full-end];
+}
+
+
+.sidebar{
+background-color:pink;
+grid-row: 1 / -1;
+}
+
+.header{
+background-color: aquamarine;
+grid-column: full-start / col-end;
+}
+.footer{
+background-color: greenyellow;
+grid-column: full-start / full-end;
+}
+
+.features{
+background-color: orange;
+}
+.realtors{
+background-color: rgb(224, 67, 164);
+
+grid-column: col-start / col-end;
+}
+.gallery{
+background-color: $secondary;
+grid-column: col-start /col-end;
+}
